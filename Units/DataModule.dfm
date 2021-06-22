@@ -22,4 +22,13 @@ object DM: TDM
     Left = 104
     Top = 16
   end
+  object FDTbDiario: TFDTable
+    Active = True
+    IndexFieldNames = 'id_diario'
+    Connection = FDConnection
+    UpdateOptions.UpdateTableName = 'tb_diario'
+    TableName = 'tb_diario'
+    Left = 176
+    Top = 16
+  end
 end

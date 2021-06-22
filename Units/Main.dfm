@@ -31,9 +31,6 @@ object FrmMain: TFrmMain
       item
         Width = 250
       end>
-    ExplicitLeft = 224
-    ExplicitTop = 184
-    ExplicitWidth = 0
   end
   object MainMenu: TMainMenu
     Left = 24
@@ -75,6 +72,7 @@ object FrmMain: TFrmMain
     object DiarioCmd: TAction
       Category = 'Registros'
       Caption = '&Di'#225'rio'
+      OnExecute = Diario
     end
     object SairCmd: TAction
       Category = 'Sistema'

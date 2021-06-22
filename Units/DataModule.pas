@@ -14,6 +14,7 @@ type
   TDM = class(TDataModule)
     FDConnection: TFDConnection;
     FDTbPerfis: TFDTable;
+    FDTbDiario: TFDTable;
   private
     { Private declarations }
   public

@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList,
-  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, Perfis;
+  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, Perfis, Diario;
 
 type
   TFrmMain = class(TForm)
@@ -29,6 +29,7 @@ type
     procedure FormActivate(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
     procedure Perfis(Sender: TObject);
+    procedure Diario(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,6 +42,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFrmMain.Diario(Sender: TObject);
+begin
+  FrmDiario.ShowModal;
+end;
 
 procedure TFrmMain.FormActivate(Sender: TObject);
 begin

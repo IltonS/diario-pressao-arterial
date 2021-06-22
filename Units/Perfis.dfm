@@ -4,7 +4,7 @@ object FrmPerfis: TFrmPerfis
   BorderStyle = bsSizeToolWin
   Caption = 'Cadastro de Perfis'
   ClientHeight = 351
-  ClientWidth = 510
+  ClientWidth = 427
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -46,7 +46,7 @@ object FrmPerfis: TFrmPerfis
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 510
+    Width = 427
     Height = 41
     Align = alTop
     Alignment = taLeftJustify
@@ -62,9 +62,7 @@ object FrmPerfis: TFrmPerfis
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 168
-    ExplicitTop = 176
-    ExplicitWidth = 185
+    ExplicitWidth = 510
   end
   object DBEdit1: TDBEdit
     Left = 45
@@ -105,7 +103,7 @@ object FrmPerfis: TFrmPerfis
   object DBGrid1: TDBGrid
     Left = 8
     Top = 123
-    Width = 494
+    Width = 403
     Height = 166
     DataSource = DataSource
     TabOrder = 5
@@ -118,14 +116,14 @@ object FrmPerfis: TFrmPerfis
   object DBNavigator: TDBNavigator
     Left = 8
     Top = 304
-    Width = 490
+    Width = 400
     Height = 25
     DataSource = DataSource
     TabOrder = 6
   end
   object DataSource: TDataSource
     DataSet = DM.FDTbPerfis
-    Left = 440
-    Top = 56
+    Left = 96
+    Top = 8
   end
 end
