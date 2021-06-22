@@ -67,26 +67,35 @@ object FrmMain: TFrmMain
     object PerfilCmd: TAction
       Category = 'Registros'
       Caption = '&Perfis'
+      Hint = 'Cadastro de perfis no sistema.'
       OnExecute = Perfis
     end
     object DiarioCmd: TAction
       Category = 'Registros'
       Caption = '&Di'#225'rio'
+      Hint = 'Faz o Registro da press'#227'o arterial.'
       OnExecute = Diario
     end
     object SairCmd: TAction
       Category = 'Sistema'
       Caption = '&Sair'
+      Hint = 'Fecha a aplica'#231#227'o.'
       OnExecute = Sair
     end
     object SobreCmd: TAction
       Category = 'Ajuda'
       Caption = '&Sobre'
+      Hint = 'Exibe informa'#231#245'es sobre a aplica'#231#227'o.'
     end
   end
   object Timer: TTimer
     OnTimer = TimerTimer
     Left = 168
+    Top = 16
+  end
+  object ApplicationEvents: TApplicationEvents
+    OnHint = ApplicationEventsHint
+    Left = 248
     Top = 16
   end
 end
