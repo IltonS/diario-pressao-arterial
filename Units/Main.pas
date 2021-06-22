@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList,
-  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, Perfis, Diario,
+  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, Perfis, Diario, Sobre,
   Vcl.AppEvnts;
 
 type
@@ -33,6 +33,7 @@ type
     procedure Perfis(Sender: TObject);
     procedure Diario(Sender: TObject);
     procedure ApplicationEventsHint(Sender: TObject);
+    procedure Sobre(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,6 +71,11 @@ end;
 procedure TFrmMain.Sair(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TFrmMain.Sobre(Sender: TObject);
+begin
+  FrmSobre.ShowModal;
 end;
 
 procedure TFrmMain.TimerTimer(Sender: TObject);

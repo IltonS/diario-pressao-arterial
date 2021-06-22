@@ -1856,6 +1856,7 @@ object FrmMain: TFrmMain
       Category = 'Ajuda'
       Caption = '&Sobre'
       Hint = 'Exibe informa'#231#245'es sobre a aplica'#231#227'o.'
+      OnExecute = Sobre
     end
   end
   object Timer: TTimer
