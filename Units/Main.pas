@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList,
-  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls;
+  Vcl.ActnMan, Vcl.Menus, Vcl.StdStyleActnCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, Perfis;
 
 type
   TFrmMain = class(TForm)
@@ -28,6 +28,7 @@ type
     procedure Sair(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure TimerTimer(Sender: TObject);
+    procedure Perfis(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,6 +46,11 @@ procedure TFrmMain.FormActivate(Sender: TObject);
 begin
   StatusBar.Panels[0].Text := ' ' + FormatDateTime('hh:nn:ss', Now);
   StatusBar.Panels[1].Text := ' ' + FormatDateTime('dddd ", " dd " de " mmmm " de " yyyy', Now);
+end;
+
+procedure TFrmMain.Perfis(Sender: TObject);
+begin
+  FrmPerfis.ShowModal;
 end;
 
 procedure TFrmMain.Sair(Sender: TObject);

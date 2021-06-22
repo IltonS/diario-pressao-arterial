@@ -70,6 +70,7 @@ object FrmMain: TFrmMain
     object PerfilCmd: TAction
       Category = 'Registros'
       Caption = '&Perfis'
+      OnExecute = Perfis
     end
     object DiarioCmd: TAction
       Category = 'Registros'
